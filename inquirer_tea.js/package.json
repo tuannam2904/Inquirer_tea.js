@@ -1,0 +1,101 @@
+{
+  "name": "Inquirer_tea",
+  "version": "1.2.0",
+  "description": "packages/prompts/README.md",
+
+  "packageManager": "yarn@4.1.1",
+  "keywords": [
+    "answer",
+    "answers",
+    "ask",
+    "base",
+    "cli",
+    "command",
+    "command-line",
+    "confirm",
+    "enquirer",
+    "generate",
+    "generator",
+    "hyper",
+    "input",
+    "inquire",
+    "inquirer",
+    "interface",
+    "iterm",
+    "javascript",
+    "menu",
+    "node",
+    "nodejs",
+    "prompt",
+    "promptly",
+    "prompts",
+    "question",
+    "readline",
+    "scaffold",
+    "scaffolder",
+    "scaffolding",
+    "stdin",
+    "stdout",
+    "terminal",
+    "tty",
+    "ui",
+    "yeoman",
+    "yo",
+    "zsh"
+  ],
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.2",
+    "@sindresorhus/tsconfig": "^5.0.0",
+    "@types/node": "^20.11.30",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "@vitest/coverage-v8": "^1.4.0",
+    "@vitest/ui": "^1.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-xo": "^0.44.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-unicorn": "^51.0.1",
+    "globby": "^14.0.1",
+    "husky": "^9.0.11",
+    "lerna": "^8.1.2",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "turbo": "^1.12.5",
+    "typescript": "^5.4.2",
+    "vitest": "^1.4.0"
+  },
+  "resolutions": {
+    "type-fest": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "integration/*"
+  ],
+  "scripts": {
+    "prepare": "husky && turbo tsc attw",
+    "setup": "node ./tools/setup-packages.mjs",
+    "pretest": "eslint . && turbo tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuannam2904/Inquirer_tea.js.git"
+  },
+  "lint-staged": {
+    "*": "yarn prettier --write",
+    "*.m?[jt]sx?": "yarn eslint --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "bugs": {
+    "url": "https://github.com/tuannam2904/Inquirer_tea.js/issues"
+  },
+  "homepage": "https://github.com/tuannam2904/Inquirer_tea.js#readme"
+}
